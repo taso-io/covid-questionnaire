@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaccination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="vaccination.js" defer></script>
+    <link rel="stylesheet" href="styles/shared.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/redberry.png" alt="Redberry" />
+      <p>3/4</p>
+    </header>
+    <main>
+      <div class="vaccine-questionnaire">
+        <form action="vaccination.html" method="GET">
+          <ul>
+            <h2>უკვე აცრილი ხარ?*</h2>
+            <li>
+              <input type="radio" name="vaccine" id="vaccinated" value="Ki" />
+              <label for="vaccinated">კი</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="vaccine"
+                id="not-vaccinated"
+                value="Ara"
+              />
+              <label for="not-vaccinated">არა</label>
+            </li>
+          </ul>
+          <ul id="vaccinated-sub-question">
+            <h2>აირჩიე რა ეტაპზე ხარ*</h2>
+            <li>
+              <input
+                type="radio"
+                name="vaccinated-status"
+                id="vaccinated-registered"
+                value="vaccinated-registered"
+              />
+              <label for="vaccinated-registered"
+                >პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label
+              >
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="vaccinated-status"
+                id="fully-vaccinated"
+                value="fully-vaccinated"
+              />
+              <label for="fully-vaccinated">სრულად აცრილი ვარ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="vaccinated-status"
+                id="vaccinated-not-registered"
+                value="vaccinated-not-registered"
+              />
+              <label for="vaccinated-not-registered"
+                >პირველი დოზა და არ დავრეგისტრირებულვარ მეორეზე</label
+              >
+            </li>
+            <li id="second-shot-registration">
+              <p>რომ არ გადადო, ბარემ ახლავე დარეგისტრირდი</p>
+              <a href="https://booking.moh.gov.ge/"
+                >https://booking.moh.gov.ge/</a
+              >
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class="illustration">
+        <img src="images/doctor.png" alt="Doctor" />
+      </div>
+    </main>
+    <div class="navigation-btn">
+      <button type="button" onclick="location.href ='covid.html'"><</button>
+      <button type="button" onclick="location.href ='recommendations.html'">
+        >
+      </button>
+    </div>
+  </body>
+</html>

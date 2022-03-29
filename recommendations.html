@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shared.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/redberry.png" alt="Redberry" />
+      <p>4/4</p>
+    </header>
+    <main>
+      <section class="recommendations-questionnaire">
+        <form action="final.html" method="GET">
+          <p>
+            რედბერის მთავარი ღირებულება ჩვენი გუნდის თითოეული წევრია. გარემო,
+            რომელსაც ჩვენი თანამშრომლები ქმნით, ბევრისთვის არის და ყოფილა წლების
+            განმავლობაში მიზნებისთვის ერთად ბრძოლის მიზეზი, ბევრისთვის კი —
+            ჩვენთან გადმოსვლის. <br />
+            პანდემიის პერიოდში ერთმანეთსაც იშვიათად ვნახულობთ პირისპირ და
+            ყოველდღიური კომუნიკაციაც გაიშვიათდა.
+          </p>
+
+          <ul>
+            <h2>
+              რა სიხშირით შეიძლება გვქონდეს საერთო არაფორმალური ონლაინ
+              შეხვედრები, სადაც ყველა სურვილისამებრ ჩაერთვება?*
+            </h2>
+            <li>
+              <input
+                type="radio"
+                name="team-meetings"
+                id="Twice-a-week"
+                value="Twice-a-week"
+                required
+              />
+              <label for="Twice-a-week">კვირაში ორჯერ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="team-meetings"
+                id="Weekly"
+                value="Weekly"
+                required
+              />
+              <label for="Weekly">კვირაში ერთხელ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="team-meetings"
+                id="Bi-weekly"
+                value="Bi-weekly"
+                required
+              />
+              <label for="Bi-weekly">ორკვირაში ერთხელ</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="team-meetings"
+                id="Monthly"
+                value="Monthly"
+                required
+              />
+              <label for="Monthly">თვეში ერთხელ</label>
+            </li>
+          </ul>
+
+          <ul>
+            <h2>კვირაში რამდენი დღე ისურვებდი ოფისიდან მუშაობას?*</h2>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="Zero"
+                value="0"
+                required
+              />
+              <label for="Zero">0</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="One"
+                value="1"
+                required
+              />
+              <label for="One">1</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="Two"
+                value="2"
+                required
+              />
+              <label for="Two">2</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="Three"
+                value="3"
+                required
+              />
+              <label for="Three">3</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="Four"
+                value="4"
+                required
+              />
+              <label for="Four">4</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="work-from-office"
+                id="Five"
+                value="5"
+                required
+              />
+              <label for="Five">5</label>
+            </li>
+          </ul>
+          <section id="open-ended-questions">
+            <label for="gatherings">რას ფიქრობ ფიზიკურ შეკრებებზე?</label>
+            <textarea
+              name="gatherings"
+              id="gatherings"
+              cols="30"
+              rows="8"
+            ></textarea>
+            <label for="feedback"
+              >რას ფიქრობ არსებულ გარემოზე: რა მოგწონს, რას დაამატებდი, რას
+              შეცვლიდი?</label
+            >
+            <textarea
+              name="feedback"
+              id="feedback"
+              cols="30"
+              rows="8"
+            ></textarea>
+          </section>
+        </form>
+        <button
+          type="submit"
+          onclick="location.href ='final.html'"
+          class="submit-btn"
+        >
+          დასრულება
+        </button>
+      </section>
+      <div class="illustration">
+        <img src="images/guy-on-bicycle.png" alt="Office" />
+      </div>
+    </main>
+    <div class="navigation-btn">
+      <button type="button" onclick="location.href ='vaccination.html'">
+        <
+      </button>
+    </div>
+  </body>
+</html>

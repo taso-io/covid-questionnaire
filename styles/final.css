@@ -1,0 +1,22 @@
+body,
+html {
+  height: 100%;
+  background-color: rgba(35, 35, 35, 1);
+}
+
+#thank-you {
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thank-you p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 0.8rem;
+  margin: auto;
+}

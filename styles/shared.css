@@ -1,0 +1,188 @@
+body {
+  background-color: rgba(234, 234, 234, 1);
+  font-family: "Roboto", sans-serif;
+  color: rgb(35, 35, 35);
+  width: 75rem;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(35, 35, 35, 1);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  font: inherit;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1rem;
+  width: 27rem;
+}
+
+textarea {
+  resize: none;
+  width: 27rem;
+  border: 0.5px solid rgb(52, 52, 52);
+  background-color: transparent;
+  display: block;
+}
+
+/* button:hover {
+
+} */
+
+/* footer a {
+  text-decoration: none;
+  padding-right: 1rem;
+  font-size: 3rem;
+  color: rgba(35, 35, 35, 1);
+} */
+
+.id-questionnaire ul,
+.covid-questionnaire ul,
+.vaccine-questionnaire ul,
+.recommendations-questionnaire ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.id-questionnaire li {
+  margin-bottom: 2.3rem;
+}
+
+.covid-questionnaire li,
+.vaccine-questionnaire li,
+.recommendations-questionnaire li {
+  margin-bottom: 1rem;
+}
+
+.id-questionnaire label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+#open-ended-questions label {
+  margin-bottom: 1rem;
+  width: 27rem;
+}
+
+.id-questionnaire input,
+#antigen-results input,
+#covid-start-date input {
+  width: 25rem;
+  height: 1.9rem;
+  background-color: transparent;
+  border: 0.5px solid rgb(52, 52, 52);
+}
+
+input:focus {
+  background-color: transparent;
+  border-color: rgb(52, 52, 52);
+}
+
+.illustration img {
+  width: 40rem;
+}
+
+#warning hr {
+  margin-top: 8rem;
+  margin-left: 0;
+  width: 12rem;
+  color: rgb(98, 98, 98);
+}
+
+#warning p {
+  font-size: 0.9rem;
+  width: 80%;
+  font-family: inherit;
+  color: rgba(98, 98, 98, 1);
+}
+
+.recommendations-questionnaire p {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  width: 27rem;
+}
+
+#open-ended-questions label,
+#covid-start-date label {
+  margin: 2rem 0 1rem 0;
+  width: 27rem;
+  display: block;
+}
+
+/* p.name-warning {
+  margin-top: 0.2rem;
+  color: red;
+} */
+
+#antigen-results label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#antigen-results input {
+  margin-top: 1rem;
+}
+
+#antigen-results {
+  display: none;
+}
+
+#antigen-test {
+  display: none;
+}
+
+#vaccinated-sub-question {
+  display: none;
+}
+
+#second-shot-registration {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  margin: 1.7rem;
+  display: none;
+}
+
+.submit-btn {
+  margin-top: 2rem;
+  background-color: rgb(32, 130, 152);
+  color: white;
+  border-radius: 1.5rem;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+#covid-start-date {
+  display: none;
+}
+
+.navigation-btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-btn button {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 2rem;
+}

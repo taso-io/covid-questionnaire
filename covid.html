@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="covid.js" defer></script>
+    <link rel="stylesheet" href="styles/shared.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/redberry.png" alt="Redberry" />
+      <p>2/4</p>
+    </header>
+    <main>
+      <div class="covid-questionnaire">
+        <form action="vaccination.html">
+          <ul id="covid-history">
+            <h2>გაქვს გადატანილი Covid-19?*</h2>
+            <li>
+              <input type="radio" name="covid" id="had-covid" value="Ki" />
+              <label for="had-covid">კი</label>
+            </li>
+            <li>
+              <input type="radio" name="covid" id="no-covid" value="Ara" />
+              <label for="no-covid">არა</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="covid"
+                id="covid-now"
+                value="Axla-makvs"
+              />
+              <label for="covid-now">ახლა მაქვს</label>
+            </li>
+          </ul>
+          <ul id="antigen-test">
+            <h2>ანტისხეულების ტესტი გაქვს გაკეთებული?*</h2>
+            <li>
+              <input
+                type="radio"
+                name="antigen"
+                id="antigen-tested"
+                value="Ki"
+              />
+              <label for="tested">კი</label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="antigen"
+                id="antigen-not-tested"
+                value="Ki"
+              />
+              <label for="not-tested">არა</label>
+            </li>
+          </ul>
+          <div id="antigen-results">
+            <label for="test-date"
+              >თუ გახსოვს, გთხოვ მიუთითე ტესტის მიახლოებითი რიცხვი და
+              ანტისხეულების რაოდენობა*</label
+            >
+            <input
+              type="text"
+              placeholder="რიცხვი"
+              onfocus="(this.type='date')"
+              id="test-date"
+              name="antigen-index"
+            />
+            <input
+              type="number"
+              id="antigen-index"
+              name="antigen-index"
+              placeholder="ანტისხეულების რაოდენობა"
+            />
+          </div>
+          <div id="covid-start-date">
+            <label for="covid-date"
+              >მიუთითე მიახლოებითი პერიოდი (დღე/თვე/წელი) როდის გქონდა
+              Covid-19*</label
+            >
+            <input
+              type="text"
+              placeholder="დდ/თთ/წწ"
+              onfocus="(this.type='date')"
+              id="covid-date"
+              name="coviddate"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="illustration">
+        <img src="images/guy-with-thermometer.png" alt="Guy with thermometer" />
+      </div>
+    </main>
+    <div class="navigation-btn">
+      <button type="button" onclick="location.href ='identification.html'">
+        <
+      </button>
+      <button type="button" onclick="location.href ='vaccination.html'">
+        >
+      </button>
+    </div>
+  </body>
+</html>

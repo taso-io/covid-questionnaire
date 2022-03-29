@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>identification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Fira+Sans:wght@400;700&family=Oswald:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/shared.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/redberry.png" alt="Redberry" />
+      <p>1/4</p>
+    </header>
+    <main>
+      <div class="id-questionnaire">
+        <form action="/covid.html">
+          <ul>
+            <li>
+              <label for="user-name">სახელი*</label>
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+                placeholder="იოსებ"
+              />
+              <p class="no-error"></p>
+            </li>
+            <li>
+              <label for="user-surname">გვარი*</label>
+              <input
+                type="text"
+                name="user-surname"
+                id="user-surname"
+                required
+                minlength="3"
+                maxlength="255"
+                placeholder="ჯუღაშვილი"
+              />
+            </li>
+            <li>
+              <label for="user-email">მეილი*</label>
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                placeholder="fbi@redberry.ge"
+              />
+            </li>
+          </ul>
+        
+        <div id="warning">
+          <hr />
+          <p>*-ით მონიშნული ველების შევსება სავალდებულოა</p>
+        </div>
+      </div>
+      <div class="illustration">
+        <img src="images/boy-and-girl.png" alt="Boy and Girl" />
+      </div>
+    </main>
+    <div class="navigation-btn">
+      <button type="button" onclick="location.href ='covid.html'">></button>
+    </div>
+  </form>
+  </body>
+</html>
